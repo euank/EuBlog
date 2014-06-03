@@ -1,4 +1,5 @@
 var config = null;
+
 module.exports.init = function() {
   if(config) return true;
   if(localStorage.config) {

@@ -8,10 +8,16 @@ body
     h1 Loading, please wait
   #logindiv.hide
     fieldset
-      legend Login to manage your Blog
-      input(id="AWS_ID",placeholder="AWS ID")
-      input(id="AWS_SECRET",placeholder="AWS SECRET")
-      input.pure-button-primary.pure-button(type="button",value="click",id="loginbtn")
+      legend Login to manage your Blog.
+        br
+        small If you don't have an account, simply enter AWS keys and a bucket those keys can read/write.
+      input#AWS_ID(placeholder="AWS ID")
+      input#AWS_SECRET(placeholder="AWS SECRET")
+      input#S3_BUCKET(placeholder="S3 bucket")
+      br
+      input#loginbtn.pure-button-primary.pure-button(type="button",value="Login")
+      label(for="loginremember") Remember me
+      input#loginremember(type="checkbox",checked=true)
   #managediv.hide
     button#compile Compile
     #editor

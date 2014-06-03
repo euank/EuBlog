@@ -1,5 +1,7 @@
 var jade = require('jade');
 var ace = require('brace');
+var config = require("./config").get;
+
 require('brace/theme/monokai');
 require('brace/mode/jade');
 
